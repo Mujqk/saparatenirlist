@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools Hub — каталог утилит и буферы обмена</title>
+  <meta name="description" content="Каталог портативных Windows-утилит для анализа, проверки системы и поиска следов. Скачивание пакета программ, официальные ссылки и готовые буферы обмена.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hub-container">
+    <!-- Шапка -->
+    <header class="hub-header">
+      <a href="./" class="hub-logo" aria-label="Tools Hub — на главную">
+        Tools Hub
+      </a>
+      <nav class="hub-nav" aria-label="Основная навигация">
+        <button type="button" class="nav-link nav-tab active" id="nav-tab-catalog" data-tab="catalog">Каталог</button>
+        <button type="button" class="nav-link nav-tab" id="nav-tab-clipboards" data-tab="clipboards">Буферы обмена</button>
+        <button type="button" class="nav-link nav-btn" id="open-about-btn" aria-haspopup="dialog">О проекте</button>
+        <a href="https://github.com/Mujqk/saparatenirlist" target="_blank" rel="noopener noreferrer" class="nav-link github-link" aria-label="GitHub репозиторий проекта">
+          <svg class="icon-github" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="hub-main">
+      <!-- Hero-блок -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <span class="hero-tagline">ПОЛЕЗНЫЕ УТИЛИТЫ</span>
+        <h1 id="hero-title" class="hero-title">Все необходимые утилиты —<br>в одном месте</h1>
+        <p class="hero-description">
+          Быстрый и удобный доступ к набору портативных утилит для анализа и проверки системы. Скачайте весь архив разом или перейдите на страницу нужной программы.
+        </p>
+
+        <!-- Кнопка скачивания -->
+        <div class="download-actions">
+          <a href="programs.zip" class="btn btn-primary" id="main-download-btn" download="programs.zip" aria-label="Скачать весь пакет портативных утилит в ZIP-архиве">
+            <svg class="btn-icon" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+              <path d="M8 11.5l4-4h-2.5V1.5h-3V7.5H4l4 4z"/>
+              <path d="M1.5 13h13v1.5h-13V13z"/>
+            </svg>
+            <span>Скачать пакет программ (.ZIP)</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Вкладка: Каталог утилит -->
+      <div id="view-catalog" class="tab-view active" role="region" aria-label="Каталог утилит">
+        <!-- Поиск и фильтры -->
+        <section class="search-filters-section" aria-label="Поиск и фильтрация каталога">
+          <div class="search-box">
+            <label for="search-input" class="visually-hidden">Поиск утилиты</label>
+            <svg class="search-icon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="7" cy="7" r="4.5"/>
+              <path d="M10.5 10.5L14 14"/>
+            </svg>
+            <input
+              type="search"
+              id="search-input"
+              class="search-input"
+              placeholder="Поиск утилиты..."
+              autocomplete="off"
+              spellcheck="false"
+            >
+            <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Очистить поиск" hidden>
+              &times;
+            </button>
+          </div>
+
+          <!-- Кнопки категорий -->
+          <div class="categories-bar" role="group" aria-label="Фильтр по категориям">
+            <button type="button" class="category-pill active" data-category="all" aria-pressed="true">Все</button>
+            <button type="button" class="category-pill" data-category="Активность" aria-pressed="false">Активность</button>
+            <button type="button" class="category-pill" data-category="Система" aria-pressed="false">Система</button>
+            <button type="button" class="category-pill" data-category="Файлы" aria-pressed="false">Файлы</button>
+            <button type="button" class="category-pill" data-category="Реестр" aria-pressed="false">Реестр</button>
+          </div>
+        </section>
+
+        <!-- Каталог утилит -->
+        <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
+          <div class="catalog-header">
+            <h2 id="catalog-title" class="catalog-title">Список утилит</h2>
+            <span id="catalog-count" class="catalog-count" aria-live="polite"></span>
+          </div>
+
+          <!-- Список карточек -->
+          <div id="cards-container" class="cards-list" role="list">
+            <!-- Карточки рендерятся через script.js -->
+          </div>
+
+          <!-- Состояние, когда ничего не найдено -->
+          <div id="empty-state" class="empty-state" hidden>
+            <p class="empty-title">Ничего не найдено</p>
+            <p class="empty-hint">Попробуйте изменить поисковый запрос или выбрать другую категорию.</p>
+            <button type="button" id="reset-filters-btn" class="btn-reset">Сбросить фильтры</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Вкладка: Буферы обмена -->
+      <div id="view-clipboards" class="tab-view" role="region" aria-label="Буферы обмена" hidden>
+        <section class="clipboards-section" aria-labelledby="clipboards-title">
+          <div class="catalog-header">
+            <div>
+              <h2 id="clipboards-title" class="catalog-title">Буферы обмена</h2>
+              <p class="clipboards-subtitle">Готовые строки запросов и фильтры для быстрой вставки в утилиты проверки.</p>
+            </div>
+            <span class="clipboards-path-hint" title="Путь к файлу с текстами буферов">
+              data/clipboards.json
+            </span>
+          </div>
+
+          <div id="clipboards-container" class="clipboards-list">
+            <!-- Блоки буферов обмена рендерятся через script.js -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Нижняя подпись -->
+      <footer class="hub-footer">
+        <div class="footer-notice">
+          <svg class="notice-icon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5"/>
+            <line x1="8" y1="7" x2="8" y2="11.5"/>
+            <circle cx="8" cy="4.5" r="0.75" fill="currentColor"/>
+          </svg>
+          <span>Ссылки ведут на официальные страницы и репозитории разработчиков утилит.</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Модальное окно "О проекте" -->
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-dialog-title">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2 id="about-dialog-title" class="dialog-title">О проекте Tools Hub</h2>
+        <button type="button" class="dialog-close-btn" id="close-about-btn" aria-label="Закрыть окно">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <p><strong>Tools Hub</strong> — независимый минималистичный каталог портативных инструментов для анализа и проверки системы Windows, поиска следов активности и работы с реестром.</p>
+        <p>Архив программ <code>programs.zip</code> подготовлен автором репозитория и загружается напрямую из <a href="https://github.com/Mujqk/saparatenirlist" target="_blank" rel="noopener noreferrer">репозитория GitHub</a>.</p>
+        <p>Во вкладке <strong>«Буферы обмена»</strong> собраны заготовки поисковых строк для утилит Everything, Last Activity, System Informer и RegScanner. Содержимое редактируется в файле <code>data/clipboards.json</code>.</p>
+        <p>Все права на утилиты, товарные знаки и исходный код принадлежат их авторам и разработчикам (Voidtools, PrivaZer, Nir Sofer, System Informer и др.).</p>
+      </div>
+      <div class="dialog-footer">
+        <button type="button" class="btn btn-secondary" id="confirm-about-btn">Понятно</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

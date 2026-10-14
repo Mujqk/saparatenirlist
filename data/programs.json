@@ -1,0 +1,155 @@
+[
+  {
+    "id": "everything",
+    "name": "Everything",
+    "category": "Файлы",
+    "description": "Мгновенный поиск файлов и папок по имени на NTFS-накопителях.",
+    "officialUrl": "https://www.voidtools.com/ru-ru/",
+    "icon": "assets/icons/everything.svg",
+    "featured": true
+  },
+  {
+    "id": "shellbag-analyzer",
+    "name": "Shellbag Analyzer",
+    "category": "Активность",
+    "description": "Анализ записей Shellbag для просмотра истории открывавшихся папок.",
+    "officialUrl": "https://privazer.com/en/download-shellbag-analyzer-shellbag-cleaner.php",
+    "icon": "assets/icons/shellbag.svg",
+    "featured": true
+  },
+  {
+    "id": "userassistview",
+    "name": "UserAssistView",
+    "category": "Активность",
+    "description": "Отображение информации о запуске приложений из реестра UserAssist.",
+    "officialUrl": "https://www.nirsoft.net/utils/userassist_view.html",
+    "icon": "assets/icons/userassist.svg",
+    "featured": true
+  },
+  {
+    "id": "executedprogramslist",
+    "name": "ExecutedProgramsList",
+    "category": "Активность",
+    "description": "Список ранее запускавшихся программ и исполняемых файлов в системе.",
+    "officialUrl": "https://www.nirsoft.net/utils/executed_programs_list.html",
+    "icon": "assets/icons/executedprograms.svg",
+    "featured": true
+  },
+  {
+    "id": "lastactivityview",
+    "name": "LastActivityView",
+    "category": "Активность",
+    "description": "Журнал последней активности пользователя и системных событий Windows.",
+    "officialUrl": "https://www.nirsoft.net/utils/computer_activity_view.html",
+    "icon": "assets/icons/lastactivity.svg",
+    "featured": true
+  },
+  {
+    "id": "jumplistsview",
+    "name": "JumpListsView",
+    "category": "Активность",
+    "description": "Просмотр записей списков переходов (Jump Lists) панели задач.",
+    "officialUrl": "https://www.nirsoft.net/utils/jump_lists_view.html",
+    "icon": "assets/icons/jumplists.svg",
+    "featured": false
+  },
+  {
+    "id": "winprefetchview",
+    "name": "WinPrefetchView",
+    "category": "Система",
+    "description": "Анализ файлов Prefetch (.pf) для проверки времени запуска программ.",
+    "officialUrl": "https://www.nirsoft.net/utils/win_prefetch_view.html",
+    "icon": "assets/icons/winprefetch.svg",
+    "featured": false
+  },
+  {
+    "id": "previousfilesrecovery",
+    "name": "PreviousFilesRecovery",
+    "category": "Файлы",
+    "description": "Поиск и восстановление предыдущих версий файлов из теневых копий тома.",
+    "officialUrl": "https://www.nirsoft.net/utils/previous_files_recovery.html",
+    "icon": "assets/icons/previousfiles.svg",
+    "featured": false
+  },
+  {
+    "id": "journaltrace",
+    "name": "Journal Trace",
+    "category": "Активность",
+    "description": "Анализ журнала USN Journal для отслеживания изменений и удалений файлов.",
+    "officialUrl": "https://github.com/ponei/JournalTrace/releases",
+    "icon": "assets/icons/journaltrace.svg",
+    "featured": false
+  },
+  {
+    "id": "browsinghistoryview",
+    "name": "BrowsingHistoryView",
+    "category": "Активность",
+    "description": "Просмотр сводной истории посещений веб-страниц во всех браузерах.",
+    "officialUrl": "https://www.nirsoft.net/utils/browsing_history_view.html",
+    "icon": "assets/icons/browsinghistory.svg",
+    "featured": false
+  },
+  {
+    "id": "browserdownloadsview",
+    "name": "BrowserDownloadsView",
+    "category": "Активность",
+    "description": "Отображение истории загрузок файлов через различные веб-браузеры.",
+    "officialUrl": "https://www.nirsoft.net/utils/web_browser_downloads_view.html",
+    "icon": "assets/icons/browserdownloads.svg",
+    "featured": false
+  },
+  {
+    "id": "systeminformer",
+    "name": "System Informer",
+    "category": "Система",
+    "description": "Продвинутый мониторинг процессов, сетевых соединений и памяти.",
+    "officialUrl": "https://systeminformer.io/",
+    "icon": "assets/icons/systeminformer.svg",
+    "featured": true
+  },
+  {
+    "id": "easycheatdetector",
+    "name": "Easy Cheat Detector",
+    "category": "Система",
+    "description": "Инструмент проверки системы и памяти на наличие сторонних модификаций.",
+    "officialUrl": "https://fungun.top/ecd/",
+    "icon": "assets/icons/easycheatdetector.svg",
+    "featured": true
+  },
+  {
+    "id": "pafish64",
+    "name": "Pafish64",
+    "category": "Система",
+    "description": "Проверка системы на наличие сред отладки, песочниц и хуков.",
+    "officialUrl": "https://github.com/a0rtega/pafish/releases/tag/v0.6",
+    "icon": "assets/icons/pafish.svg",
+    "featured": false
+  },
+  {
+    "id": "registryfinder",
+    "name": "Registry Finder",
+    "category": "Реестр",
+    "description": "Быстрый поиск, замена и удобная навигация по ключам реестра Windows.",
+    "officialUrl": "https://registry-finder.com/",
+    "icon": "assets/icons/registryfinder.svg",
+    "featured": false
+  },
+  {
+    "id": "appcrashview",
+    "name": "AppCrashView",
+    "category": "Система",
+    "description": "Просмотр отчётов о сбоях и аварийных завершениях программ Windows.",
+    "officialUrl": "https://www.nirsoft.net/utils/app_crash_view.html",
+    "icon": "assets/icons/appcrashview.svg",
+    "featured": false
+  },
+  {
+    "id": "regscanner",
+    "name": "RegScanner",
+    "category": "Реестр",
+    "description": "Сканирование реестра Windows с экспортом найденных значений в .reg.",
+    "officialUrl": "https://www.nirsoft.net/utils/regscanner.html",
+    "icon": "assets/icons/regscanner.svg",
+    "featured": false
+  }
+]
